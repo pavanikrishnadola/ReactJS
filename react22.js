@@ -1,18 +1,19 @@
-import React,{Component} from "react";
-class App extends React.Component{
-  constructor(){
+import React from "react";
+class App extends React.Component {
+  constructor() {
     super();
-    this.state={displayBio:true};
+    this.state = {displayBio: true};
   }
-  render(){
-    const bio=this.state.displayBio?(
+  render() {
+    const bio = this.state.displayBio ? (
       <div>
-      <p><h3>Coding is fun</h3><p>
+      <p><h3>Coding is fun</h3></p>
       </div>
-      ):null;
-    return(
+    ) : null;
+    return (
       <div>
-      <h1>I Like Coding<h1>
+        <h1>I Like Coding</h1>
+        {bio}
       </div>
     );
   }
